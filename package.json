@@ -1,0 +1,40 @@
+{
+  "name": "jest-watch-coverage",
+  "version": "0.0.0-development",
+  "description": "Run jest with coverage once in watch mode",
+  "keywords": [
+    "jest",
+    "jest-watch-plugins",
+    "testing",
+    "tooling"
+  ],
+  "homepage": "https://github.com/unional/jest-watch-coverage",
+  "bugs": {
+    "url": "https://github.com/unional/jest-watch-coverage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unional/jest-watch-coverage.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Homa Wong (unional)",
+    "email": "homawong@gmail.com"
+  },
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf lib",
+    "dc": "npm run dependency-check",
+    "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --reporters=default",
+    "verify": "npm run lint && npm run build && npm run dependency-check && jest --coverage --reporters=default",
+    "watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@unional/devpkg-node": "^1.2.4",
+    "assertron": "^6.1.0"
+  }
+}

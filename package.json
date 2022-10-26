@@ -34,7 +34,7 @@
     "watch": "jest --watch"
   },
   "devDependencies": {
-    "@unional/devpkg-node": "^1.2.4",
+    "@unional/devpkg-node": "1.2.4",
     "assertron": "10.0.0"
   }
 }

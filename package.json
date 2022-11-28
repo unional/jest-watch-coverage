@@ -35,6 +35,6 @@
   },
   "devDependencies": {
     "@unional/devpkg-node": "^1.2.4",
-    "assertron": "10.0.0"
+    "assertron": "11.0.1"
   }
 }
